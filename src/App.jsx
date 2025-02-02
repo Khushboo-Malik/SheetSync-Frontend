@@ -50,7 +50,7 @@ const App = () => {
       <header className="header">
         <h1 className="title">SheetSync</h1>
         <p className="subtitle">
-        Effortless Excel Imports, Maximum Efficiency
+          Effortless Excel Imports, Maximum Efficiency
         </p>
       </header>
 
