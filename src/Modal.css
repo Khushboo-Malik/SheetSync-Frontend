@@ -1,0 +1,77 @@
+/* Modal.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); /* Slightly darker overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal {
+  background-color: rgba(51, 51, 51, 0.95); /* Dark semi-transparent background */
+  color: #ffffff; /* White text */
+  padding: 30px;
+  border-radius: 10px;
+  width: 80vw;         /* 80% of the viewport width */
+  max-width: 800px;    /* Maximum width on larger screens */
+  height: 70vh;        /* 70% of the viewport height */
+  overflow-y: auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  margin: 0 5px;
+  padding: 10px 20px;
+  background-color: #cccccc; /* Light grey background */
+  color: #000000;            /* Black text */
+  border: 1px solid #999;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab-btn.active {
+  background-color: #28a745; /* Green for active tab */
+  color: #ffffff;
+  border-color: #28a745;
+}
+
+.tab-content {
+  padding: 15px;
+  text-align: left;
+}
+
+.error-item {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #d9534f;           /* Red border */
+  border-radius: 5px;
+  background-color: rgba(217, 83, 79, 0.2); /* Translucent red background */
+}
+
+.close-btn {
+  display: block;
+  margin: 20px auto 0 auto;
+  padding: 12px 24px;
+  background-color: #ff4d4d; /* Red button */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-btn:hover {
+  background-color: #e60000;
+}
